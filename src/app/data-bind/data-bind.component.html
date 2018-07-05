@@ -1,0 +1,192 @@
+<section>
+  <article class="">
+    <h3>Interpolation / Interpolação</h3>
+
+    <p>String renderizada com interpolação: {{ url }}</p>
+    <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
+    <p>Resultado de 1 + 1 não é {{ 1 + 1 + getValor() }}</p>
+    <p>Curso de Angular e gosto do curso: {{ cursoAngular && getCurtiCurso() }}</p>
+  </article>
+
+  <article class="">
+    <h3>Property bind</h3>
+    <img src="{{ urlImagem }}" alt="Imagem de esporte">
+    <!-- OU -->
+    <img [src]="urlImagem" alt="Imagem de esporte">
+  </article>
+
+  <article class="">
+    <h3>Class e Style-binding</h3>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        Selecione uma classe:
+        <select class="form-control" name="" #class (change) = '0'>
+          <option value="success">Sucesso</option>
+          <option value="danger">Erro</option>
+          <option value="info">Info</option>
+          <option value="warning">Alerta</option>
+        </select>
+      </div>
+
+      <div class="col-sm-6 col-xs-12">
+        <div class="alert alert-danger" role="alert"
+          [style.display]="class.value == 'danger' ? 'block' : 'none'">
+          Mensagem ...
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="alert col-xs-12" role="alert"
+        [class.alert-success]="class.value == 'success'">
+        Alert de Sucesso
+      </div>
+
+      <div class="alert" role="alert"
+        [class.alert-danger]="class.value == 'danger'">
+        Alert de Erro
+      </div>
+
+      <div class="alert" role="alert"
+        [class.alert-info]="class.value == 'info'">
+        Alert de Info
+      </div>
+
+      <div class="alert" role="alert"
+        [class.alert-warning]="class.value == 'warning'">
+        Alert de Alerta
+      </div>
+    </div>
+  </article>
+
+  <article class="">
+    <h3>Event-bind</h3>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-3">
+        <button
+          (click)="clickMe()"
+          type="button"
+          class="btn btn-primary"
+          name="btnClickMe">
+          Click me !
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <input
+        (keyup)="onKeyUp($event)"
+        (keyup.enter)="salvar($event.target.value)"
+        (blur)="salvar(campoInput.value)"
+        type="text"
+        name="txtValue"
+        placeholder="Escreva o seu texto"
+        class="form-control"
+        #campoInput>
+        <p>
+          Valor salvo: {{ valorSalvo }}
+        </p>
+
+        <p
+          (mouseover)="onMouseOverOut()"
+          (mouseout)="onMouseOverOut()"
+          [class.highlight]="isMouseOver">
+          Trabalhando com eventos de mouses
+        </p>
+      </div>
+
+      <div class="col-xs-12 col-sm-6">
+        <textarea name="name" class="form-control" readonly>{{ valorInput }}</textarea>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section>
+  <article class="">
+    <h3>Two way data bind</h3>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="form-group">
+          <label
+            for=""
+            class="control-label"
+            >Digite o seu texto
+          </label>
+          <input
+          class="form-control"
+          type="text"
+          [value]="nome"
+          (input)="setNome($event.target.value)"/>
+          <p>
+            Seu texto: {{ nome }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="form-group">
+          <label
+            for=""
+            class="control-label"
+            >Digite o seu texto
+          </label>
+          <input
+          class="form-control"
+          type="text"
+          [(ngModel)]="sobrenome"/>
+          <p>
+            Seu texto: {{ sobrenome }}
+          </p>
+
+          <p>
+            Nome completo {{ nome }} {{ sobrenome }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label
+            for=""
+            class="control-label">
+            Nome:
+          </label>
+          <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="pessoa.nome">
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label
+            class="control-label">
+            Idade:
+          </label>
+          <input
+            type="number"
+            class="form-control"
+            [(ngModel)]="pessoa.idade"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <p>
+          Olá, meu nome é {{ pessoa.nome }} e tenho {{ pessoa.idade}} anos.
+        </p>
+      </div>
+    </div>
+  </article>
+</section>
