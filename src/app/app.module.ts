@@ -11,13 +11,15 @@ import { MeuPrimeiro2Component } from './meu-primeiro2/meu-primeiro2.component';
 // importando um novo modulo
 import { CursosModule } from "./cursos/cursos.module";
 import { DataBindComponent } from './data-bind/data-bind.component';
+import { InputPropertyComponent } from './input-property/input-property.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MeuPrimeiroComponent,
     MeuPrimeiro2Component,
-    DataBindComponent
+    DataBindComponent,
+    InputPropertyComponent
   ],
   imports: [
     BrowserModule,
