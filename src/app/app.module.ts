@@ -13,6 +13,7 @@ import { OutputPropertyComponent } from './output-property/output-property.compo
 
 // importando um novo modulo
 import { CursosModule } from "./cursos/cursos.module";
+import { CicloComponent } from './ciclo/ciclo.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CursosModule } from "./cursos/cursos.module";
     MeuPrimeiro2Component,
     DataBindComponent,
     InputPropertyComponent,
-    OutputPropertyComponent
+    OutputPropertyComponent,
+    CicloComponent
   ],
   imports: [
     BrowserModule,

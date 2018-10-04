@@ -22,3 +22,6 @@
 <app-meu-primeiro2></app-meu-primeiro2>
 <app-cursos></app-cursos>
 <app-data-bind></app-data-bind>
+<app-ciclo [valorInicial]="valorInicial" *ngIf="!deletarCiclo"></app-ciclo>
+<button (click)="mudarValor()">Mudar Valor</button>
+<button (click)="destruirCiclo()">Deletar</button>
