@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-xs-12 col-md-1">
+    <div class="form-group">
+      <button class="btn btn-primary btn-block" (click)="decrementa()">-</button>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-md-3">
+    <div class="form-group">
+      <input class="form-control" type="number" min="0" [value]="valor" readonly>
+    </div>
+  </div>
+  
+  <div class="col-xs-12 col-md-1">
+    <div class="form-group">
+      <button class="btn btn-primary btn-block" (click)="incrementa()">+</button>
+    </div>
+  </div>
+</div>

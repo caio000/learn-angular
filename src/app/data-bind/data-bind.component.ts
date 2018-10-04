@@ -15,6 +15,8 @@ export class DataBindComponent implements OnInit {
   nome = '';
   sobrenome = '';
 
+  valorInicial = 15;
+
   nomeDoCurso:string = 'Angular';
 
   pessoa: any = {
@@ -50,6 +52,10 @@ export class DataBindComponent implements OnInit {
 
   setNome (nome:string) : void {
     this.nome = nome;
+  }
+
+  onMudouValor(evento) {
+    console.log(evento.novoValor);
   }
 
 

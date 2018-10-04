@@ -7,11 +7,12 @@ import { AppComponent } from './app.component';
 // importando components
 import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
 import { MeuPrimeiro2Component } from './meu-primeiro2/meu-primeiro2.component';
+import { DataBindComponent } from './data-bind/data-bind.component';
+import { InputPropertyComponent } from './input-property/input-property.component';
+import { OutputPropertyComponent } from './output-property/output-property.component';
 
 // importando um novo modulo
 import { CursosModule } from "./cursos/cursos.module";
-import { DataBindComponent } from './data-bind/data-bind.component';
-import { InputPropertyComponent } from './input-property/input-property.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { InputPropertyComponent } from './input-property/input-property.componen
     MeuPrimeiroComponent,
     MeuPrimeiro2Component,
     DataBindComponent,
-    InputPropertyComponent
+    InputPropertyComponent,
+    OutputPropertyComponent
   ],
   imports: [
     BrowserModule,
