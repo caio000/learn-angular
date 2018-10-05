@@ -14,7 +14,7 @@ export class CursosComponent implements OnInit {
   cursos: Array<string>;
   private cursosService: CursosService;
 
-  constructor(cursoService:CursosService) {
+  constructor(cursoService: CursosService) {
     this.nomePortal = 'caio000.github.io';
     this.cursosService = cursoService;
     this.cursos = this.cursosService.getCursos();

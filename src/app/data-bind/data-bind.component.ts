@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBindComponent implements OnInit {
 
-  url:string = 'http://caio000.github.io';
+  url = 'http://caio000.github.io';
   cursoAngular = true;
   valorInput;
   valorSalvo;
@@ -17,40 +17,40 @@ export class DataBindComponent implements OnInit {
 
   valorInicial = 15;
 
-  nomeDoCurso:string = 'Angular';
+  nomeDoCurso = 'Angular';
 
   pessoa: any = {
-    nome:null,
-    idade:null,
+    nome: null,
+    idade: null,
   };
 
-  urlImagem: string = 'http://lorempixel.com/400/200/sports';
+  urlImagem = 'http://lorempixel.com/400/200/sports';
 
-  getValor () : number {
+  getValor (): number {
     return 1;
   }
-  getCurtiCurso () : boolean {
+  getCurtiCurso (): boolean {
     return true;
   }
 
-  clickMe () : void {
+  clickMe (): void {
     alert('click');
   }
 
-  onKeyUp (event : KeyboardEvent) : void {
-    let valor = (<HTMLInputElement>event.target).value;
+  onKeyUp (event: KeyboardEvent): void {
+    const valor = (<HTMLInputElement>event.target).value;
     this.valorInput = valor;
   }
 
-  salvar (value:string):void {
+  salvar (value: string): void {
     this.valorSalvo = value;
   }
 
-  onMouseOverOut () : void {
+  onMouseOverOut (): void {
     this.isMouseOver = !this.isMouseOver;
   }
 
-  setNome (nome:string) : void {
+  setNome (nome: string): void {
     this.nome = nome;
   }
 

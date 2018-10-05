@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-  deletarCiclo: boolean = false;
-  valorInicial = 5;
+    title = 'primeiro-projeto';
+    deletarCiclo = false;
+    valorInicial = 5;
 
-  mudarValor() : void {
+  mudarValor(): void {
     this.valorInicial++;
   }
 

@@ -22,4 +22,8 @@ describe('OutputPropertyComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should be test', () => {
+      expect(component.valor).toBe(0);
+  });
 });
