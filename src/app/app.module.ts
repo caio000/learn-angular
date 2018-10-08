@@ -14,6 +14,7 @@ import { CicloComponent } from './ciclo/ciclo.component';
 
 // importando um novo modulo
 import { CursosModule } from './cursos/cursos.module';
+import { DiretivaNgifComponent } from './diretiva/diretiva-ngif/diretiva-ngif.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CursosModule } from './cursos/cursos.module';
     DataBindComponent,
     InputPropertyComponent,
     OutputPropertyComponent,
-    CicloComponent
+    CicloComponent,
+    DiretivaNgifComponent
   ],
   imports: [
     BrowserModule,
