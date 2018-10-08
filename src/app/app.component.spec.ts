@@ -1,4 +1,4 @@
-import { CursosComponent } from './cursos/cursos.component';
+import { DiretivaNgifComponent } from './diretiva/diretiva-ngif/diretiva-ngif.component';
 import { FormsModule } from '@angular/forms';
 import { CicloComponent } from './ciclo/ciclo.component';
 import { DataBindComponent } from './data-bind/data-bind.component';
@@ -9,6 +9,7 @@ import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { InputPropertyComponent } from './input-property/input-property.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
+import { SwitchComponent } from './diretiva/switch/switch.component';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -20,6 +21,8 @@ describe('AppComponent', () => {
         CicloComponent,
         InputPropertyComponent,
         OutputPropertyComponent,
+        SwitchComponent,
+        DiretivaNgifComponent,
       ],
       imports: [
           FormsModule,
