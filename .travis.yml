@@ -4,6 +4,7 @@ node_js:
 sudo:
   - true
 before_script:
+  - "export CHROME_BIN=/usr/bin/google-chrome"
   - "./node_modules/typescript/bin/tsc"
   - "wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
   - "sudo dpkg -i google-chrome*.deb"
