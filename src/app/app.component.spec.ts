@@ -1,3 +1,5 @@
+import { DiretivaNgforComponent } from './diretiva/diretiva-ngfor/diretiva-ngfor.component';
+import { NgStyleComponent } from './diretiva/ng-style/ng-style.component';
 import { DiretivaNgifComponent } from './diretiva/diretiva-ngif/diretiva-ngif.component';
 import { FormsModule } from '@angular/forms';
 import { CicloComponent } from './ciclo/ciclo.component';
@@ -10,6 +12,7 @@ import { AppComponent } from './app.component';
 import { InputPropertyComponent } from './input-property/input-property.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
 import { SwitchComponent } from './diretiva/switch/switch.component';
+import { DiretivaNgclassComponent } from './diretiva/diretiva-ngclass/diretiva-ngclass.component';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -23,6 +26,9 @@ describe('AppComponent', () => {
         OutputPropertyComponent,
         SwitchComponent,
         DiretivaNgifComponent,
+        NgStyleComponent,
+        DiretivaNgclassComponent,
+        DiretivaNgforComponent,
       ],
       imports: [
           FormsModule,

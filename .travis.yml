@@ -1,7 +1,10 @@
 language: node_js
 node_js:
   - "8.9"
-before_script:
-  - "./node_modules/typescript/bin/tsc"
+sudo:
+  - true
+addons:
+  chrome: stable
 script:
-  - "npm test"
+  - "ng lint"
+  - "ng test --watch=false"
