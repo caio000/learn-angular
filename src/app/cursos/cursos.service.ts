@@ -5,7 +5,7 @@ export class CursosService {
 
   constructor() { }
 
-  getCursos () : Array<string> {
-    return ['java','javascript','html','css','php'];
+  getCursos (): Array<string> {
+    return ['java', 'javascript', 'html', 'css', 'php'];
   }
 }

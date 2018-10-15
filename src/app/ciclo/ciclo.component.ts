@@ -26,18 +26,19 @@ export class CicloComponent implements
                                         AfterContentChecked,
                                         OnDestroy {
 
-  @Input() valorInicial: number = 10;
+  @Input() valorInicial: number;
 
   constructor() {
+      this.valorInicial = 10;
     this.log('constructor');
   }
 
   ngOnInit() {
-    this.log("ngOnInit");
+    this.log('ngOnInit');
   }
 
   ngOnChanges(): void {
-    this.log("ngOnChanges");
+    this.log('ngOnChanges');
   }
 
   ngDoCheck(): void {
@@ -45,7 +46,7 @@ export class CicloComponent implements
   }
 
   ngAfterContentInit(): void {
-    this.log("ngAfterContentInit");
+    this.log('ngAfterContentInit');
   }
 
   ngAfterContentChecked(): void {
@@ -53,15 +54,15 @@ export class CicloComponent implements
   }
 
   ngAfterViewInit(): void {
-    this.log("ngAfterViewInit");
+    this.log('ngAfterViewInit');
   }
 
   ngAfterViewChecked(): void {
-    this.log("ngAfterViewChecked");
+    this.log('ngAfterViewChecked');
   }
 
   ngOnDestroy(): void {
-    this.log("ndOnDestroy");
+    this.log('ndOnDestroy');
   }
 
   log(value: any): void {
