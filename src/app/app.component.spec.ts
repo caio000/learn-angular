@@ -13,6 +13,8 @@ import { InputPropertyComponent } from './input-property/input-property.componen
 import { OutputPropertyComponent } from './output-property/output-property.component';
 import { SwitchComponent } from './diretiva/switch/switch.component';
 import { DiretivaNgclassComponent } from './diretiva/diretiva-ngclass/diretiva-ngclass.component';
+import { OperadorElvisComponent } from './operador-elvis/operador-elvis.component';
+import { NgContentComponent } from './diretiva/ng-content/ng-content.component';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -29,6 +31,8 @@ describe('AppComponent', () => {
         NgStyleComponent,
         DiretivaNgclassComponent,
         DiretivaNgforComponent,
+        OperadorElvisComponent,
+        NgContentComponent,
       ],
       imports: [
           FormsModule,
