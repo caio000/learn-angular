@@ -12,15 +12,14 @@ export class CursosComponent implements OnInit {
 
   nomePortal: string;
   cursos: Array<string>;
-  private cursosService: CursosService;
+  cursoCriado: string;
 
-  constructor(cursoService: CursosService) {
-    this.nomePortal = 'caio000.github.io';
-    this.cursosService = cursoService;
-    this.cursos = this.cursosService.getCursos();
-  }
+  constructor(private cursoService: CursosService) {}
 
   ngOnInit() {
+      this.nomePortal = 'caio000.github.io';
+      this.cursos = this.cursoService.getCursos();
+      this.cursoService.emitirCursoCriado.subscribe(curso => this.cursoCriado = curso);
   }
 
 }
