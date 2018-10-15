@@ -3,10 +3,8 @@ node_js:
   - "8.9"
 sudo:
   - true
-before_script:
-  - "export CHROME_BIN=/usr/bin/google-chrome"
-  - "./node_modules/typescript/bin/tsc"
-  - "wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
-  - "sudo dpkg -i google-chrome*.deb"
+addons:
+  chrome: stable
 script:
-  - "npm test"
+  - "ng lint"
+  - "ng test --watch=false"
