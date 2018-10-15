@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-ng-content',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ng-content.component.css']
 })
 export class NgContentComponent implements OnInit {
+
+    @Input() cardImage: string;
 
   constructor() { }
 
