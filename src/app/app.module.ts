@@ -21,6 +21,8 @@ import { DiretivaNgclassComponent } from './diretiva/diretiva-ngclass/diretiva-n
 import { NgStyleComponent } from './diretiva/ng-style/ng-style.component';
 import { OperadorElvisComponent } from './operador-elvis/operador-elvis.component';
 import { NgContentComponent } from './diretiva/ng-content/ng-content.component';
+import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
+import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { NgContentComponent } from './diretiva/ng-content/ng-content.component';
     DiretivaNgclassComponent,
     NgStyleComponent,
     OperadorElvisComponent,
-    NgContentComponent
+    NgContentComponent,
+    FundoAmareloDirective,
+    DiretivasCustomizadasComponent
   ],
   imports: [
     BrowserModule,
