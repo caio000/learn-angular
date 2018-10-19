@@ -15,6 +15,9 @@ import { SwitchComponent } from './diretiva/switch/switch.component';
 import { DiretivaNgclassComponent } from './diretiva/diretiva-ngclass/diretiva-ngclass.component';
 import { OperadorElvisComponent } from './operador-elvis/operador-elvis.component';
 import { NgContentComponent } from './diretiva/ng-content/ng-content.component';
+import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
+import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';
+import { HighlightDirective } from './shared/highlight.directive';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -33,6 +36,9 @@ describe('AppComponent', () => {
         DiretivaNgforComponent,
         OperadorElvisComponent,
         NgContentComponent,
+        DiretivasCustomizadasComponent,
+        FundoAmareloDirective,
+        HighlightDirective,
       ],
       imports: [
           FormsModule,
