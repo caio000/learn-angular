@@ -1,3 +1,4 @@
+import { HighlightDirective } from './../shared/highlight.directive';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DiretivasCustomizadasComponent } from './diretivas-customizadas.component';
@@ -12,6 +13,7 @@ describe('DiretivasCustomizadasComponent', () => {
     TestBed.configureTestingModule({
         declarations: [
             DiretivasCustomizadasComponent,
+            HighlightDirective
         ]
     })
     .compileComponents();
