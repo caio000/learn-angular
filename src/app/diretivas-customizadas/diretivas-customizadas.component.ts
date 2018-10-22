@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, TemplateRef, ViewContainerRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-diretivas-customizadas',
