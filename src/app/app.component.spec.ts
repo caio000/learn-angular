@@ -18,6 +18,7 @@ import { NgContentComponent } from './diretiva/ng-content/ng-content.component';
 import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
 import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';
 import { HighlightDirective } from './shared/highlight.directive';
+import { NgElseDirective } from './shared/ng-else.directive';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -39,6 +40,7 @@ describe('AppComponent', () => {
         DiretivasCustomizadasComponent,
         FundoAmareloDirective,
         HighlightDirective,
+        NgElseDirective,
       ],
       imports: [
           FormsModule,

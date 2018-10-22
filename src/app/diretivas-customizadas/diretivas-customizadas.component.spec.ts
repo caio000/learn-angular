@@ -4,6 +4,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { DiretivasCustomizadasComponent } from './diretivas-customizadas.component';
 import { FundoAmareloDirective } from '../shared/fundo-amarelo.directive';
 import { HighlightMouseDirective } from '../shared/highlight-mouse.directive';
+import { NgElseDirective } from '../shared/ng-else.directive';
 
 describe('DiretivasCustomizadasComponent', () => {
   let component: DiretivasCustomizadasComponent;
@@ -13,7 +14,8 @@ describe('DiretivasCustomizadasComponent', () => {
     TestBed.configureTestingModule({
         declarations: [
             DiretivasCustomizadasComponent,
-            HighlightDirective
+            HighlightDirective,
+            NgElseDirective,
         ]
     })
     .compileComponents();
