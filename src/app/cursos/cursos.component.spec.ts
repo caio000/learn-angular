@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { CursosService } from './cursos.service';
 import { CursoDetalheComponent } from './curso-detalhe/curso-detalhe.component';
 import { CursosComponent } from './cursos.component';
-import { CriarCursoComponent } from "./criar-curso/criar-curso.component";
+import { CriarCursoComponent } from './criar-curso/criar-curso.component';
 
 describe('CursosComponent', () => {
   let component: CursosComponent;

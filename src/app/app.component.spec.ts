@@ -1,3 +1,5 @@
+import { CamelCasePipe } from './camel-case.pipe';
+import { ExemplosPipesComponent } from './exemplos-pipes/exemplos-pipes.component';
 import { DiretivaNgforComponent } from './diretiva/diretiva-ngfor/diretiva-ngfor.component';
 import { NgStyleComponent } from './diretiva/ng-style/ng-style.component';
 import { DiretivaNgifComponent } from './diretiva/diretiva-ngif/diretiva-ngif.component';
@@ -19,6 +21,10 @@ import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
 import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';
 import { HighlightDirective } from './shared/highlight.directive';
 import { NgElseDirective } from './shared/ng-else.directive';
+import { FiltroArrayPipe } from './filtro-array.pipe';
+import { FiltroArrayImpuroPipe } from './filtro-array-impuro.pipe';
+
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -41,6 +47,10 @@ describe('AppComponent', () => {
         FundoAmareloDirective,
         HighlightDirective,
         NgElseDirective,
+        ExemplosPipesComponent,
+        CamelCasePipe,
+        FiltroArrayImpuroPipe,
+        FiltroArrayPipe
       ],
       imports: [
           FormsModule,
