@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ExemplosPipesComponent } from './exemplos-pipes.component';
+import { CamelCasePipe } from '../camel-case.pipe';
 
 describe('ExemplosPipesComponent', () => {
   let component: ExemplosPipesComponent;
@@ -8,7 +9,10 @@ describe('ExemplosPipesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ExemplosPipesComponent ]
+        declarations: [
+            ExemplosPipesComponent,
+            CamelCasePipe,
+        ]
     })
     .compileComponents();
   }));

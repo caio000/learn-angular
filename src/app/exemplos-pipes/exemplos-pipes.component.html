@@ -1,7 +1,7 @@
 <h5>Exemplo de pipes</h5>
 
 <p>
-  Título: <strong>{{ livro.titulo | uppercase }}</strong>
+  Título: <strong>{{ livro.titulo | uppercase | camelCase }}</strong>
 </p>
 <p>
   Nota: <strong>{{ livro.nota | number:'2.1-1' }}</strong>

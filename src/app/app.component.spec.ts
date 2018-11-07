@@ -1,3 +1,4 @@
+import { CamelCasePipe } from './camel-case.pipe';
 import { ExemplosPipesComponent } from './exemplos-pipes/exemplos-pipes.component';
 import { DiretivaNgforComponent } from './diretiva/diretiva-ngfor/diretiva-ngfor.component';
 import { NgStyleComponent } from './diretiva/ng-style/ng-style.component';
@@ -45,6 +46,7 @@ describe('AppComponent', () => {
         HighlightDirective,
         NgElseDirective,
         ExemplosPipesComponent,
+        CamelCasePipe,
       ],
       imports: [
           FormsModule,
