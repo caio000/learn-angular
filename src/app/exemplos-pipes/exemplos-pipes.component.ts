@@ -17,6 +17,13 @@ livro: any = {
     url: 'http://umaurlqualquer.com',
 };
 
+livros: string [] = [
+    'angular',
+    'java'
+];
+
+filtro: string;
+
   constructor() { }
 
   ngOnInit() {

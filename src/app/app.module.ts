@@ -31,6 +31,7 @@ import { NgElseDirective } from './shared/ng-else.directive';
 import { LogService } from './shared/log.service';
 import { ExemplosPipesComponent } from './exemplos-pipes/exemplos-pipes.component';
 import { CamelCasePipe } from './camel-case.pipe';
+import { FiltroArrayPipe } from './filtro-array.pipe';
 
 
 registerLocaleData(localePt);
@@ -57,7 +58,8 @@ registerLocaleData(localePt);
     HighlightDirective,
     NgElseDirective,
     ExemplosPipesComponent,
-    CamelCasePipe
+    CamelCasePipe,
+    FiltroArrayPipe
   ],
   imports: [
     BrowserModule,

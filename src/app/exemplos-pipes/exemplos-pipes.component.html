@@ -20,3 +20,12 @@
 </p>
 <hr>
 <p>Livro: {{ livro | json }}</p>
+
+
+<h5>Lista de livros</h5>
+<input type="text" name="" id="" [(ngModel)]="filtro">
+<ul>
+  <li *ngFor="let livro of livros | filtroArray:filtro">
+    {{ livro }}
+  </li>
+</ul>
