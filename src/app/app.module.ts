@@ -27,6 +27,7 @@ import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
 import { HighlightDirective } from './shared/highlight.directive';
 import { NgElseDirective } from './shared/ng-else.directive';
 import { LogService } from './shared/log.service';
+import { ExemplosPipesComponent } from './exemplos-pipes/exemplos-pipes.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { LogService } from './shared/log.service';
     DiretivasCustomizadasComponent,
     HighlightMouseDirective,
     HighlightDirective,
-    NgElseDirective
+    NgElseDirective,
+    ExemplosPipesComponent
   ],
   imports: [
     BrowserModule,

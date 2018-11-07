@@ -1,3 +1,4 @@
+import { ExemplosPipesComponent } from './exemplos-pipes/exemplos-pipes.component';
 import { DiretivaNgforComponent } from './diretiva/diretiva-ngfor/diretiva-ngfor.component';
 import { NgStyleComponent } from './diretiva/ng-style/ng-style.component';
 import { DiretivaNgifComponent } from './diretiva/diretiva-ngif/diretiva-ngif.component';
@@ -19,6 +20,8 @@ import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
 import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';
 import { HighlightDirective } from './shared/highlight.directive';
 import { NgElseDirective } from './shared/ng-else.directive';
+
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -41,6 +44,7 @@ describe('AppComponent', () => {
         FundoAmareloDirective,
         HighlightDirective,
         NgElseDirective,
+        ExemplosPipesComponent,
       ],
       imports: [
           FormsModule,

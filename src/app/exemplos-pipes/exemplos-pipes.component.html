@@ -1,0 +1,22 @@
+<h5>Exemplo de pipes</h5>
+
+<p>
+  Título: <strong>{{ livro.titulo | uppercase }}</strong>
+</p>
+<p>
+  Nota: <strong>{{ livro.nota | number:'2.1-1' }}</strong>
+</p>
+<p>
+  Número de páginas: <strong>{{ livro.numeroPaginas | number }}</strong>
+</p>
+<p>
+  Preço: <strong>{{ livro.preco | currency:'BRL':true }}</strong>
+</p>
+<p>
+  Data de lançamento: <strong>{{ livro.dataLancamento | date:'dd-MMM-yyyy' }}</strong>
+</p>
+<p>
+  Url: <strong>{{ livro.url }}</strong>
+</p>
+<hr>
+<p>Livro: {{ livro | json }}</p>

@@ -1,6 +1,7 @@
 # PrimeiroProjeto
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1fa76b2404b446e782302f7bb26b7623)](https://app.codacy.com/app/caio000/learn-angular?utm_source=github.com&utm_medium=referral&utm_content=caio000/learn-angular&utm_campaign=Badge_Grade_Dashboard)
+[![Build Status](https://travis-ci.com/caio000/learn-angular.svg?branch=master)](https://travis-ci.com/caio000/learn-angular)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
