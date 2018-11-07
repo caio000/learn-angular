@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { registerLocaleData } from '@angular/common';
+import localePt from '@angular/common/locales/pt';
 
 import { AppComponent } from './app.component';
 
@@ -29,6 +31,9 @@ import { NgElseDirective } from './shared/ng-else.directive';
 import { LogService } from './shared/log.service';
 import { ExemplosPipesComponent } from './exemplos-pipes/exemplos-pipes.component';
 import { CamelCasePipe } from './camel-case.pipe';
+
+
+registerLocaleData(localePt);
 
 @NgModule({
   declarations: [
@@ -61,6 +66,10 @@ import { CamelCasePipe } from './camel-case.pipe';
   ],
   providers: [
       LogService,
+      {
+          provide: LOCALE_ID,
+          useValue: 'pt',
+      },
   ],
   bootstrap: [AppComponent]
 })
