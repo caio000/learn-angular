@@ -29,4 +29,8 @@ filtro: string;
   ngOnInit() {
   }
 
+  addCurso(livro: string): void {
+      this.livros.push(livro);
+  }
+
 }
