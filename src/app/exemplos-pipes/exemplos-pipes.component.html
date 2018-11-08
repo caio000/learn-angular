@@ -44,3 +44,12 @@
     {{ livro }}
   </li>
 </ul>
+
+
+<h5>Lista de livros <small>Forma correta</small></h5>
+<input type="text" name="" id="" [(ngModel)]="filtro">
+<ul>
+  <li *ngFor="let livro of filtrarCurso()">
+    {{ livro }}
+  </li>
+</ul>

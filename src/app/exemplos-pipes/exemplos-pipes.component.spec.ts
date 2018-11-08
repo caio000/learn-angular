@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { ExemplosPipesComponent } from './exemplos-pipes.component';
 import { CamelCasePipe } from '../camel-case.pipe';
 import { FiltroArrayPipe } from '../filtro-array.pipe';
+import { FiltroArrayImpuroPipe } from './../filtro-array-impuro.pipe';
 
 describe('ExemplosPipesComponent', () => {
   let component: ExemplosPipesComponent;
@@ -14,6 +15,7 @@ describe('ExemplosPipesComponent', () => {
         declarations: [
             ExemplosPipesComponent,
             CamelCasePipe,
+            FiltroArrayImpuroPipe,
             FiltroArrayPipe
         ],
         imports: [

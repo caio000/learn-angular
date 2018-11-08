@@ -22,6 +22,7 @@ import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretiv
 import { HighlightDirective } from './shared/highlight.directive';
 import { NgElseDirective } from './shared/ng-else.directive';
 import { FiltroArrayPipe } from './filtro-array.pipe';
+import { FiltroArrayImpuroPipe } from './filtro-array-impuro.pipe';
 
 
 describe('AppComponent', () => {
@@ -48,6 +49,7 @@ describe('AppComponent', () => {
         NgElseDirective,
         ExemplosPipesComponent,
         CamelCasePipe,
+        FiltroArrayImpuroPipe,
         FiltroArrayPipe
       ],
       imports: [

@@ -6,4 +6,4 @@ import { FiltroArrayPipe } from './filtro-array.pipe';
   name: 'filtroArrayImpuro',
   pure: false
 })
-export class FiltroArrayImpuroPipe extends FiltroArrayPipe { }
+export class FiltroArrayImpuroPipe extends FiltroArrayPipe implements PipeTransform { }

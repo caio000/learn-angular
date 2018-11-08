@@ -29,6 +29,14 @@ filtro: string;
   ngOnInit() {
   }
 
+  filtrarCurso() {
+      if (this.livros.length === 0 || this.filtro === undefined) {
+          return this.livros;
+      }
+
+      return this.livros.filter((v) => v.toLowerCase().indexOf(this.filtro) !== -1);
+  }
+
   addCurso(livro: string): void {
       this.livros.push(livro);
   }
