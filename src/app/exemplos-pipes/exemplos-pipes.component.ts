@@ -24,6 +24,11 @@ livros: string [] = [
 
 filtro: string;
 
+valorAsync = new Promise((resolve, reject) => {
+    setTimeout(() => resolve('valor assincrono'), 2000)
+});
+
+
   constructor() { }
 
   ngOnInit() {
