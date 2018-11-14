@@ -6,6 +6,8 @@ import localePt from '@angular/common/locales/pt';
 
 import { AppComponent } from './app.component';
 
+import { routing } from './app.routing';
+
 // importando components
 import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
 import { MeuPrimeiro2Component } from './meu-primeiro2/meu-primeiro2.component';
@@ -33,6 +35,10 @@ import { ExemplosPipesComponent } from './exemplos-pipes/exemplos-pipes.componen
 import { CamelCasePipe } from './camel-case.pipe';
 import { FiltroArrayPipe } from './filtro-array.pipe';
 import { FiltroArrayImpuroPipe } from './filtro-array-impuro.pipe';
+import { MyAppComponent } from './my-app/my-app.component';
+import { UsuarioComponent } from './rotas/usuario/usuario.component';
+import { LoginComponent } from './rotas/login/login.component';
+import { HomeComponent } from './rotas/home/home.component';
 
 
 registerLocaleData(localePt);
@@ -61,12 +67,17 @@ registerLocaleData(localePt);
     ExemplosPipesComponent,
     CamelCasePipe,
     FiltroArrayPipe,
-    FiltroArrayImpuroPipe
+    FiltroArrayImpuroPipe,
+    MyAppComponent,
+    HomeComponent,
+    LoginComponent,
+    UsuarioComponent
   ],
   imports: [
     BrowserModule,
     CursosModule,
     FormsModule,
+    routing
   ],
   providers: [
       LogService,
