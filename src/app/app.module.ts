@@ -39,6 +39,7 @@ import { MyAppComponent } from './my-app/my-app.component';
 import { UsuarioComponent } from './rotas/usuario/usuario.component';
 import { LoginComponent } from './rotas/login/login.component';
 import { HomeComponent } from './rotas/home/home.component';
+import { MenuComponent } from './shared/menu/menu.component';
 
 
 registerLocaleData(localePt);
@@ -71,7 +72,8 @@ registerLocaleData(localePt);
     MyAppComponent,
     HomeComponent,
     LoginComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
