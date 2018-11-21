@@ -8,7 +8,7 @@ import { UsuarioComponent } from './rotas/usuario/usuario.component';
 
 const APP_ROUTES: Routes = [
     { path: 'login', component: LoginComponent },
-    { path: 'usuarios', component: UsuarioComponent },
+    { path: 'usuarios/:id', component: UsuarioComponent },
     { path: 'rotas', component: HomeComponent },
     { path: '', component: MyAppComponent }
 ];
