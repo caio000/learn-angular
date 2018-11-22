@@ -40,6 +40,8 @@ import { UsuarioComponent } from './rotas/usuario/usuario.component';
 import { LoginComponent } from './rotas/login/login.component';
 import { HomeComponent } from './rotas/home/home.component';
 import { MenuComponent } from './shared/menu/menu.component';
+import { UsuarioService } from './rotas/usuario/usuario.service';
+import { UsuarioDetalhesComponent } from './rotas/usuario/usuario-detalhes/usuario-detalhes.component';
 
 
 registerLocaleData(localePt);
@@ -73,7 +75,8 @@ registerLocaleData(localePt);
     HomeComponent,
     LoginComponent,
     UsuarioComponent,
-    MenuComponent
+    MenuComponent,
+    UsuarioDetalhesComponent
   ],
   imports: [
     BrowserModule,
@@ -83,6 +86,7 @@ registerLocaleData(localePt);
   ],
   providers: [
       LogService,
+      UsuarioService,
       {
           provide: LOCALE_ID,
           useValue: 'pt',

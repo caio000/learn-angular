@@ -33,6 +33,7 @@ import { LoginComponent } from './rotas/login/login.component';
 import { UsuarioComponent } from './rotas/usuario/usuario.component';
 import { HomeComponent } from './rotas/home/home.component';
 import { MenuComponent } from './shared/menu/menu.component';
+import { UsuarioDetalhesComponent } from './rotas/usuario/usuario-detalhes/usuario-detalhes.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -65,6 +66,7 @@ describe('AppComponent', () => {
         UsuarioComponent,
         HomeComponent,
         MenuComponent,
+        UsuarioDetalhesComponent,
       ],
       imports: [
           FormsModule,

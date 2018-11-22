@@ -1,9 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { ActivatedRoute } from '@angular/router';
-import { Observable} from 'rxjs';
-import { of } from 'rxjs/observable/of';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { UsuarioComponent } from './usuario.component';
+import { UsuarioService } from './usuario.service';
 
 describe('UsuarioComponent', () => {
   let component: UsuarioComponent;
@@ -12,15 +12,11 @@ describe('UsuarioComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ UsuarioComponent ],
-      providers: [
-          {
-              provide: ActivatedRoute,
-              useValue: (): Observable<any> => of({id: 5}),
-          }
-      ]
+      imports: [ RouterTestingModule.withRoutes([]) ],
+      providers: [ UsuarioService ]
     })
     .compileComponents().then(() => {
-        const fixture = TestBed.createComponent(UsuarioComponent);
+        fixture = TestBed.createComponent(UsuarioComponent);
         component = fixture.componentInstance;
     });
   }));
