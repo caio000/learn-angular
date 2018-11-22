@@ -19,7 +19,7 @@ export class UsuarioService {
   }
 
   getById(id: number): Usuario {
-      return this.usuarios.find((usuario) => usuario.id == id);
+      return this.usuarios.find((usuario) => usuario.id === id);
   }
 
   getAll(): Array<Usuario> {

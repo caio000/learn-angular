@@ -21,7 +21,7 @@ export class UsuarioDetalhesComponent implements OnInit {
 
   ngOnInit() {
       this.route.params.subscribe((params: any) => {
-          this.usuario = this.usuarioService.getById(params['id']);
+          this.usuario = this.usuarioService.getById(+params['id']);
 
           if (this.usuario == null) {
               this.router.navigate(['']);
