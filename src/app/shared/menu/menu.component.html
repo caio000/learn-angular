@@ -3,7 +3,7 @@
      <a routerLinkActive="active" routerLink="/" class="brand-logo">Logo</a>
      <ul id="nav-mobile" class="right hide-on-med-and-down">
        <li routerLinkActive="active"><a routerLink="/">Inicio</a></li>
-       <li routerLinkActive="active"><a routerLink="/usuarios">Usuários</a></li>
+       <li routerLinkActive="active"><a routerLink="/usuarios" [queryParams]="{pagina: 1}">Usuários</a></li>
        <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
      </ul>
    </div>
