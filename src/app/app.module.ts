@@ -7,7 +7,8 @@ import localePt from '@angular/common/locales/pt';
 import { AppComponent } from './app.component';
 
 // import { routing } from './app.routing';
-import { AppRoutingModule } from "./app.routing.module";
+import { AppRoutingModule } from './app.routing.module';
+import { UsuarioModule } from './rotas/usuario/usuario.module';
 
 // importando components
 import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
@@ -37,12 +38,9 @@ import { CamelCasePipe } from './camel-case.pipe';
 import { FiltroArrayPipe } from './filtro-array.pipe';
 import { FiltroArrayImpuroPipe } from './filtro-array-impuro.pipe';
 import { MyAppComponent } from './my-app/my-app.component';
-import { UsuarioComponent } from './rotas/usuario/usuario.component';
 import { LoginComponent } from './rotas/login/login.component';
 import { HomeComponent } from './rotas/home/home.component';
 import { MenuComponent } from './shared/menu/menu.component';
-import { UsuarioService } from './rotas/usuario/usuario.service';
-import { UsuarioDetalhesComponent } from './rotas/usuario/usuario-detalhes/usuario-detalhes.component';
 
 
 registerLocaleData(localePt);
@@ -75,19 +73,17 @@ registerLocaleData(localePt);
     MyAppComponent,
     HomeComponent,
     LoginComponent,
-    UsuarioComponent,
     MenuComponent,
-    UsuarioDetalhesComponent
   ],
   imports: [
     BrowserModule,
     CursosModule,
     FormsModule,
+    UsuarioModule,
     AppRoutingModule
   ],
   providers: [
       LogService,
-      UsuarioService,
       {
           provide: LOCALE_ID,
           useValue: 'pt',
