@@ -6,7 +6,8 @@ import localePt from '@angular/common/locales/pt';
 
 import { AppComponent } from './app.component';
 
-import { routing } from './app.routing';
+// import { routing } from './app.routing';
+import { AppRoutingModule } from "./app.routing.module";
 
 // importando components
 import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
@@ -82,7 +83,7 @@ registerLocaleData(localePt);
     BrowserModule,
     CursosModule,
     FormsModule,
-    routing
+    AppRoutingModule
   ],
   providers: [
       LogService,
