@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 // import { routing } from './app.routing';
 import { AppRoutingModule } from './app.routing.module';
 import { UsuarioModule } from './rotas/usuario/usuario.module';
-import { AlunosModule } from './rotas/alunos/alunos.module';
+// import { AlunosModule } from './rotas/alunos/alunos.module';
 
 // importando components
 import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
@@ -81,7 +81,7 @@ registerLocaleData(localePt);
     CursosModule,
     FormsModule,
     UsuarioModule,
-    AlunosModule,
+    // AlunosModule,
     AppRoutingModule
   ],
   providers: [

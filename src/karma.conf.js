@@ -14,7 +14,7 @@ module.exports = function (config) {
         ]
       }
     },
-    browsers: ["Chrome"],
+    browsers: ["ChromeHeadless"],
     basePath: "",
     frameworks: ["jasmine", "@angular-devkit/build-angular"],
     plugins: [
@@ -36,7 +36,7 @@ module.exports = function (config) {
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
-    autoWatch: true,
-    singleRun: false
+    autoWatch: false,
+    singleRun: true
   });
 };

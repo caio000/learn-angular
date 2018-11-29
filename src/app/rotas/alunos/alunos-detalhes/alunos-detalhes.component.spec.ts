@@ -22,7 +22,9 @@ describe('AlunosDetalhesComponent', () => {
           AlunosService,
           {
               provide: ActivatedRoute,
-              useValue: { params: Observable.of({'id':1})}
+              useValue: {
+                  params: Observable.of({ 'id': 1 })
+              }
           },
       ]
     })

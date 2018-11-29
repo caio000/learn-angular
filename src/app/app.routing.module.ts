@@ -8,6 +8,7 @@ import { LoginComponent } from './rotas/login/login.component';
 // import { UsuarioDetalhesComponent } from './rotas/usuario/usuario-detalhes/usuario-detalhes.component';
 
 const APP_ROUTES: Routes = [
+    { path: 'alunos', loadChildren: './rotas/alunos/alunos.module#AlunosModule' },
     { path: 'login', component: LoginComponent },
     // { path: 'usuarios/:id', component: UsuarioDetalhesComponent },
     // { path: 'usuarios', component: UsuarioComponent },

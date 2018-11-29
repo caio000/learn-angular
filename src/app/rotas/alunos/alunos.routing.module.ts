@@ -7,7 +7,7 @@ import { AlunosFormComponent } from './alunos-form/alunos-form.component';
 
 
 const ALUNOS_ROUTING = [
-    { path: 'alunos', component: AlunosComponent, children: [
+    { path: '', component: AlunosComponent, children: [
         { path: 'novo', component: AlunosFormComponent },
         { path: ':id', component: AlunosDetalhesComponent },
         { path: ':id/editar', component: AlunosFormComponent },
