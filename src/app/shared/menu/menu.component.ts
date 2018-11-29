@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { AuthService } from './../../rotas/login/auth.service';
+
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+    public mostrarMenu: boolean;
+
+  constructor(
+      private authService: AuthService
+  ) {
+      this.mostrarMenu = false;
+  }
 
   ngOnInit() {
+      this.authService.mostrarMenu.subscribe(mostrarMenu => this.mostrarMenu = mostrarMenu);
   }
 
 }

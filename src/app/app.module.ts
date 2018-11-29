@@ -43,6 +43,9 @@ import { LoginComponent } from './rotas/login/login.component';
 import { HomeComponent } from './rotas/home/home.component';
 import { MenuComponent } from './shared/menu/menu.component';
 
+// importando serviços
+import { AuthService } from './rotas/login/auth.service';
+
 
 registerLocaleData(localePt);
 
@@ -86,6 +89,7 @@ registerLocaleData(localePt);
   ],
   providers: [
       LogService,
+      AuthService,
       {
           provide: LOCALE_ID,
           useValue: 'pt',

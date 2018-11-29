@@ -9,8 +9,8 @@ export class UsuarioService {
 
   constructor() {
       this.usuarios = [
-          {'id': 1, 'name': 'Augusto Enzo Aparício'},
-          {'id': 2, 'name': 'Carolina Cláudia Letícia Baptista'}
+          {'id': 1, 'name': 'Augusto Enzo Aparício', email: '', password: ''},
+          {'id': 2, 'name': 'Carolina Cláudia Letícia Baptista', email: '', password: ''}
       ];
   }
 

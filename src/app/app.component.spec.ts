@@ -35,6 +35,8 @@ import { HomeComponent } from './rotas/home/home.component';
 import { MenuComponent } from './shared/menu/menu.component';
 import { UsuarioDetalhesComponent } from './rotas/usuario/usuario-detalhes/usuario-detalhes.component';
 
+import { AuthService } from './rotas/login/auth.service';
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -74,6 +76,7 @@ describe('AppComponent', () => {
           routing,
       ],
       providers: [
+          AuthService,
           {
               provide: APP_BASE_HREF,
               useValue: '/',
