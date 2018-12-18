@@ -32,4 +32,8 @@ export class AlunosFormComponent implements OnInit, OnDestroy {
       this.inscricao.unsubscribe();
   }
 
+  sairDoFormulario(): boolean {
+      return confirm('Ao sair do formulário todas as informações serão perdidas, deseja realmente sair?');
+  }
+
 }

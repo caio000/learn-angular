@@ -12,8 +12,8 @@ export class CursosGuard implements CanActivateChild {
     ): Observable<boolean> | boolean {
         console.log('guard child');
         if (state.url.includes('editar')) {
-            alert('Usuário sem acesso');
-            return false;
+            // alert('Usuário sem acesso');
+            // return false;
         }
         return true;
     }

@@ -10,6 +10,7 @@ import { AlunosDetalhesComponent } from './alunos-detalhes/alunos-detalhes.compo
 import { AlunosService } from './alunos.service';
 
 import { CursosGuard } from './../../guard/cursos.guard.service';
+import { AlunosDeactivatedGuard } from './../../guard/alunos.deactivated.guard.service';
 
 @NgModule({
   imports: [
@@ -25,6 +26,7 @@ import { CursosGuard } from './../../guard/cursos.guard.service';
   providers: [
       AlunosService,
       CursosGuard,
+      AlunosDeactivatedGuard,
   ]
 })
 export class AlunosModule { }
