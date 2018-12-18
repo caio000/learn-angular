@@ -6,14 +6,16 @@ import { HomeComponent } from './rotas/home/home.component';
 import { LoginComponent } from './rotas/login/login.component';
 // import { UsuarioComponent } from './rotas/usuario/usuario.component';
 // import { UsuarioDetalhesComponent } from './rotas/usuario/usuario-detalhes/usuario-detalhes.component';
+import { AuthGuardService } from './guard/auth.guard.service';
+import { CursosGuard } from './guard/cursos.guard.service';
 
 const APP_ROUTES: Routes = [
-    { path: 'alunos', loadChildren: './rotas/alunos/alunos.module#AlunosModule' },
+    { path: 'alunos', loadChildren: './rotas/alunos/alunos.module#AlunosModule', canActivate: [AuthGuardService] },
     { path: 'login', component: LoginComponent },
     // { path: 'usuarios/:id', component: UsuarioDetalhesComponent },
     // { path: 'usuarios', component: UsuarioComponent },
-    { path: 'rotas', component: HomeComponent },
-    { path: '', component: MyAppComponent }
+    { path: 'rotas', component: HomeComponent, canActivate: [AuthGuardService] },
+    { path: '', component: MyAppComponent, canActivate: [AuthGuardService] }
 ];
 
 

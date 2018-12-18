@@ -6,7 +6,7 @@ import { Usuario } from './../usuario/usuario';
 @Injectable()
 export class AuthService {
 
-    private usuarioAutenticado: boolean = false;
+    private usuarioAutenticado = false;
     public mostrarMenu = new EventEmitter<boolean>();
 
     constructor(
@@ -21,5 +21,9 @@ export class AuthService {
         } else {
             this.usuarioAutenticado = false;
         }
+    }
+
+    public isUsuarioAutenticado() {
+        return this.usuarioAutenticado;
     }
 }

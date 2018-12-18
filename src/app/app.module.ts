@@ -45,6 +45,7 @@ import { MenuComponent } from './shared/menu/menu.component';
 
 // importando serviços
 import { AuthService } from './rotas/login/auth.service';
+import { AuthGuardService } from './guard/auth.guard.service';
 
 
 registerLocaleData(localePt);
@@ -90,6 +91,7 @@ registerLocaleData(localePt);
   providers: [
       LogService,
       AuthService,
+      AuthGuardService,
       {
           provide: LOCALE_ID,
           useValue: 'pt',
