@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 
 import { Subscription } from 'rxjs';
 
+import { IFormDeactivate } from './../../../guard/iform.deactivate';
 import { Alunos } from './../alunos';
 import { AlunosService } from './../alunos.service';
 
@@ -11,7 +12,7 @@ import { AlunosService } from './../alunos.service';
   templateUrl: './alunos-form.component.html',
   styleUrls: ['./alunos-form.component.css']
 })
-export class AlunosFormComponent implements OnInit, OnDestroy {
+export class AlunosFormComponent implements OnInit, OnDestroy, IFormDeactivate {
 
     public aluno: Alunos;
     public inscricao: Subscription;
@@ -32,7 +33,7 @@ export class AlunosFormComponent implements OnInit, OnDestroy {
       this.inscricao.unsubscribe();
   }
 
-  sairDoFormulario(): boolean {
+  podeDesativar(): boolean {
       return confirm('Ao sair do formulário todas as informações serão perdidas, deseja realmente sair?');
   }
 
